@@ -5,9 +5,9 @@
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
 
-// function greeting(name) {
-//   return "Hello, " + name;
-// };
+function greeting(name) {
+  return "Hello, " + name;
+};
 
 //////////////////PROBLEM 2////////////////////
 
@@ -113,7 +113,8 @@ function add (num1, num2) {
 //Now invoke math, passing in the numbers 3 and 4, and your add function,
 //storing the result in the variable mathSum.
 
-math(3,4);
+var mathSum = math(3,4) + add();
+
 
 
 //////////////////PROBLEM 8////////////////////
@@ -129,8 +130,8 @@ function sampleCallbackTwo() {
   return "I am also a callback function";
 }
 
-function invoker (callback){
-  return callback;
+function invoker (callback) {
+  return callback();
 };
 
 //////////////////PROBLEM 9////////////////////
@@ -161,10 +162,10 @@ let globalScope = ["duck"];
 let bathroomScope = ["rubberDuck", "duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["sailorDuck", 'realDuck'];
+let bathtubScope = ["sailorDuck", 'duck'];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["realDuck", "duck"];
+let pondScope = ["realDuck"];
 
 //////////////////PROBLEM 10////////////////////
 
