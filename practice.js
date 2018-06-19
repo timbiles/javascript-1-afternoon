@@ -113,7 +113,7 @@ function add (num1, num2) {
 //Now invoke math, passing in the numbers 3 and 4, and your add function,
 //storing the result in the variable mathSum.
 
-var mathSum = math(3,4) + add();
+var mathSum = math(3,4, add);
 
 
 
@@ -156,16 +156,16 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck"];
+let globalScope = ['duck'];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["rubberDuck", "duck"];
+let bathroomScope = ['rubberDuck', "duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["sailorDuck", 'duck'];
+let bathtubScope = ['sailorDuck', 'duck', 'rubberDuck'];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["realDuck"];
+let pondScope = ['realDuck', 'duck'];
 
 //////////////////PROBLEM 10////////////////////
 
@@ -173,7 +173,7 @@ let pondScope = ["realDuck"];
 //function which returns your name.
 
 function outerFn () {
-  return function anonymous () {
+  return function () {
     return 'Tim Biles';
   };
 }
@@ -184,4 +184,4 @@ var innerFn = outerFn();
 
 //Now invoke innerFn and save the result to a variable called finalResult.
 
-//Code Here
+var finalResult = innerFn();
