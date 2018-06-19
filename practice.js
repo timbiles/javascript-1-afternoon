@@ -5,9 +5,9 @@
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
 
-function greeting(name) {
-  return "Hello, " + name;
-};
+// function greeting(name) {
+//   return "Hello, " + name;
+// };
 
 //////////////////PROBLEM 2////////////////////
 
