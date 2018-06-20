@@ -43,12 +43,14 @@ var groceries = ["apples", "milk", "eggs", "bread"];
 //   return groceries;
 // };
 
-function doubleCheck(arr) {
-  if(arr.indexOf('chocolate') === -1) {
+function doubleCheck(arr){
+  if(arr.includes('chocolate')){
+    return arr
+  } else{
     arr.push('chocolate')
+    return arr
   }
-  return arr;
-};
+}
 
 //////////////////PROBLEM 5////////////////////
 
